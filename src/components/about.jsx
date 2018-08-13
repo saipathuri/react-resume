@@ -4,17 +4,23 @@ class About extends Component {
   state = {};
   render() {
     return (
-      <div>
-        <h2>HELLO</h2>
-        <p>
-          Cras facilisis urna ornare ex volutpat, et convallis erat elementum.
-          Ut aliquam, ipsum vitae gravida suscipit, metus dui bibendum est, eget
-          rhoncus nibh metus nec massa. Maecenas hendrerit laoreet augue nec
-          molestie. Cum sociis natoque penatibus et magnis dis parturient
-          montes, nascetur ridiculus mus.
-        </p>
-
-        <p>Duis a turpis sed lacus dapibus elementum sed eu lectus.</p>
+      <div className="row align-items-center fill">
+        <div className="col-lg">
+          <h1 className="display-1">Sai Pathuri</h1>
+          <div className="subheading mb-5">
+            8314 Pommel Dr. · Austin, TX 78759 · (512) 994-6923 ·&nbsp;
+            <a href="mailto:iam@saipathuri.me">iam@saipathuri.me</a>
+          </div>
+          <blockquote className="blockquote">
+            <p className="mb-0">
+              Highly motivated student with hands-on experience in several team
+              projects working on Web Development (Frontend and Backend),
+              Android/iOS and API development, capable of rapidly integrating
+              new information into his performance, with strong communication
+              skills.
+            </p>
+          </blockquote>
+        </div>
       </div>
     );
   }

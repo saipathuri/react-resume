@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import { Route, HashRouter } from "react-router-dom";
 import About from "./components/about";
@@ -11,9 +10,9 @@ class App extends Component {
   render() {
     return (
       <HashRouter>
-        <div>
+        <div className="fill">
           <Navbar />
-          <div className="container">
+          <div className="container fill">
             <Route exact path="/" component={About} />
             <Route path="/experience" component={Experience} />
             <Route path="/education" component={Education} />
