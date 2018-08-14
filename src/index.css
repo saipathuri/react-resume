@@ -7,9 +7,10 @@ body {
   padding: 0;
   font-family: sans-serif;
   height: 100%;
+  position: relative;
 }
 
 .fill {
-  min-height: 95%;
-  height: 95%;
+  min-height: 100vh;
+  /* height: 100%; */
 }

@@ -4,7 +4,7 @@ class About extends Component {
   state = {};
   render() {
     return (
-      <div className="row align-items-center fill my-3">
+      <div className="row align-items-center fill my-3" id="about">
         <div className="col-lg">
           <h1 className="display-1">Sai Pathuri</h1>
           <div className="subheading mb-5">

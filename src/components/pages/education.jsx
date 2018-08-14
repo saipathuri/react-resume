@@ -5,6 +5,7 @@ class Education extends Component {
   state = {
     items: [
       {
+        id: 1,
         schoolName: "University of Texas at Dallas",
         degree: "Bachelor of Science",
         descriptions: [
@@ -20,6 +21,7 @@ class Education extends Component {
         date: "Aug. 2015 - May 2019 (Expected)"
       },
       {
+        id: 2,
         schoolName: "Westwood High School",
         degree: "Diploma (Professional Studies Program)",
         descriptions: [
@@ -34,12 +36,13 @@ class Education extends Component {
   };
   render() {
     return (
-      <div className="row align-items-start fill my-3">
+      <div className="row align-items-start fill my-3" id="education">
         <div className="col-lg">
           <h1 className="display-4">Education</h1>
           {this.state.items.map(item => {
             return (
               <EducationItem
+                key={item.id}
                 schoolName={item.schoolName}
                 degree={item.degree}
                 descriptions={item.descriptions}

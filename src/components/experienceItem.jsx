@@ -10,7 +10,7 @@ const ExperienceItem = props => {
           <ul className="list-group">
             {props.descriptions.map(item => {
               return (
-                <li className="list-group-item">
+                <li key={item.id} className="list-group-item">
                   <strong>{item.topic}</strong>: {item.description}
                 </li>
               );

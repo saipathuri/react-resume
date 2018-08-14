@@ -10,7 +10,7 @@ const EducationItem = props => {
           <ul className="list-group d-inline-flex">
             {props.descriptions.map(item => {
               return (
-                <li className="list-group-item">
+                <li key={item.topic} className="list-group-item">
                   <strong>{item.topic}</strong>: {item.description}
                 </li>
               );
