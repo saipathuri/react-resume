@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "./App.css";
 import { Route, HashRouter } from "react-router-dom";
-import About from "./components/about";
-import Experience from "./components/experience";
-import Education from "./components/education";
+import About from "./components/pages/about";
+import Experience from "./components/pages/experience";
+import Education from "./components/pages/education";
 import Navbar from "./components/navbar";
 
 class App extends Component {
