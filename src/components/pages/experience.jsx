@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ExperienceItem from "../experienceItem";
+import { ParallaxLayer } from "react-spring";
 
 class Experience extends Component {
   state = {
@@ -86,27 +87,33 @@ class Experience extends Component {
   };
   render() {
     return (
-      <div class="bg-light py-3">
-        <div className="container">
-          <div className="row align-items-start fill my-3" id="experience">
-            <div className="col-lg">
-              <h1 className="display-4">Experience</h1>
-              {this.state.items.map(item => {
-                return (
-                  <ExperienceItem
-                    key={item.id}
-                    title={item.title}
-                    company={item.company}
-                    descriptions={item.descriptions}
-                    date={item.date}
-                    location={item.location}
-                  />
-                );
-              })}
+      <ParallaxLayer
+        offset={this.props.offset}
+        speed={0.4}
+        onClick={this.props.onClick}
+      >
+        <div class="bg-light py-3">
+          <div className="container">
+            <div className="row align-items-start fill my-3" id="experience">
+              <div className="col-lg">
+                <h1 className="display-4">Experience</h1>
+                {this.state.items.map(item => {
+                  return (
+                    <ExperienceItem
+                      key={item.id}
+                      title={item.title}
+                      company={item.company}
+                      descriptions={item.descriptions}
+                      date={item.date}
+                      location={item.location}
+                    />
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </ParallaxLayer>
     );
   }
 }
