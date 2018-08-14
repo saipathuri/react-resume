@@ -18,7 +18,8 @@ class Experience extends Component {
           }
         ],
         date: "Summer 2018",
-        location: "Plano, TX"
+        location: "Plano, TX",
+        active: true
       },
       {
         id: 2,
@@ -33,7 +34,8 @@ class Experience extends Component {
           }
         ],
         date: "Oct. 2017 - Dec. 2017",
-        location: "Irving, TX"
+        location: "Irving, TX",
+        active: false
       },
       {
         id: 3,
@@ -60,7 +62,8 @@ class Experience extends Component {
           }
         ],
         date: "Summer 2017",
-        location: "Basking Ridge, NJ"
+        location: "Basking Ridge, NJ",
+        active: false
       },
       {
         id: 4,
@@ -81,7 +84,8 @@ class Experience extends Component {
           }
         ],
         date: "Aug. 2016 - Dec. 2016",
-        location: "Richardson, TX, TX"
+        location: "Richardson, TX",
+        active: false
       }
     ]
   };
@@ -92,12 +96,68 @@ class Experience extends Component {
         speed={0.4}
         onClick={this.props.onClick}
       >
-        <div class="bg-light py-3">
+        <div className="bg-light py-3">
           <div className="container">
             <div className="row align-items-start fill my-3" id="experience">
               <div className="col-lg">
                 <h1 className="display-4">Experience</h1>
-                {this.state.items.map(item => {
+                <div className="carousel slide" data-ride="carousel">
+                  <ol className="carousel-indicators">
+                    <li
+                      data-target="#carouselExampleIndicators"
+                      data-slide-to="0"
+                      className="active"
+                    />
+                    <li
+                      data-target="#carouselExampleIndicators"
+                      data-slide-to="1"
+                    />
+                    <li
+                      data-target="#carouselExampleIndicators"
+                      data-slide-to="2"
+                    />
+                  </ol>
+                  <div className="carousel-inner">
+                    {this.state.items.map(item => {
+                      return (
+                        <ExperienceItem
+                          key={item.id}
+                          title={item.title}
+                          company={item.company}
+                          descriptions={item.descriptions}
+                          date={item.date}
+                          location={item.location}
+                          active={item.active}
+                        />
+                      );
+                    })}
+                  </div>
+                  <a
+                    className="carousel-control-prev"
+                    href="#carouselExampleIndicators"
+                    role="button"
+                    data-slide="prev"
+                  >
+                    <span
+                      className="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    />
+                    <span className="sr-only">Previous</span>
+                  </a>
+                  <a
+                    className="carousel-control-next"
+                    href="#carouselExampleIndicators"
+                    role="button"
+                    data-slide="next"
+                  >
+                    <span
+                      className="carousel-control-next-icon"
+                      aria-hidden="true"
+                    />
+                    <span className="sr-only">Next</span>
+                  </a>
+                </div>
+                {/* {this.state.items.map(item => {
                   return (
                     <ExperienceItem
                       key={item.id}
@@ -108,7 +168,7 @@ class Experience extends Component {
                       location={item.location}
                     />
                   );
-                })}
+                })} */}
               </div>
             </div>
           </div>

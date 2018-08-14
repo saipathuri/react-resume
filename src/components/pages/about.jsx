@@ -10,7 +10,7 @@ class About extends Component {
         speed={0.4}
         onClick={this.props.onClick}
       >
-        <div class="bg-dark">
+        <div className="bg-dark">
           <div className="container">
             <div className="row align-items-center fill bg-dark" id="about">
               <div className="col-lg">

@@ -42,7 +42,7 @@ class Education extends Component {
         speed={0.4}
         onClick={this.props.onClick}
       >
-        <div class="bg-dark py-3">
+        <div className="bg-dark py-3">
           <div className="container">
             <div className="row align-items-start fill my-3" id="education">
               <div className="col-lg">
