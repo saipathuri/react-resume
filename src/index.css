@@ -14,3 +14,17 @@ body {
   min-height: 100vh;
   /* height: 100%; */
 }
+
+.pagination {
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.4em;
+  z-index: 10;
+  display: inherit !important;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+  border-radius: 50% !important;
+}

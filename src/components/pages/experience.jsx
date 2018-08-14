@@ -86,21 +86,25 @@ class Experience extends Component {
   };
   render() {
     return (
-      <div className="row align-items-start fill my-3" id="experience">
-        <div className="col-lg">
-          <h1 className="display-4">Experience</h1>
-          {this.state.items.map(item => {
-            return (
-              <ExperienceItem
-                key={item.id}
-                title={item.title}
-                company={item.company}
-                descriptions={item.descriptions}
-                date={item.date}
-                location={item.location}
-              />
-            );
-          })}
+      <div class="bg-light py-3">
+        <div className="container">
+          <div className="row align-items-start fill my-3" id="experience">
+            <div className="col-lg">
+              <h1 className="display-4">Experience</h1>
+              {this.state.items.map(item => {
+                return (
+                  <ExperienceItem
+                    key={item.id}
+                    title={item.title}
+                    company={item.company}
+                    descriptions={item.descriptions}
+                    date={item.date}
+                    location={item.location}
+                  />
+                );
+              })}
+            </div>
+          </div>
         </div>
       </div>
     );

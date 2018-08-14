@@ -36,20 +36,24 @@ class Education extends Component {
   };
   render() {
     return (
-      <div className="row align-items-start fill my-3" id="education">
-        <div className="col-lg">
-          <h1 className="display-4">Education</h1>
-          {this.state.items.map(item => {
-            return (
-              <EducationItem
-                key={item.id}
-                schoolName={item.schoolName}
-                degree={item.degree}
-                descriptions={item.descriptions}
-                date={item.date}
-              />
-            );
-          })}
+      <div class="bg-dark py-3">
+        <div className="container">
+          <div className="row align-items-start fill my-3" id="education">
+            <div className="col-lg">
+              <h1 className="display-4 text-light">Education</h1>
+              {this.state.items.map(item => {
+                return (
+                  <EducationItem
+                    key={item.id}
+                    schoolName={item.schoolName}
+                    degree={item.degree}
+                    descriptions={item.descriptions}
+                    date={item.date}
+                  />
+                );
+              })}
+            </div>
+          </div>
         </div>
       </div>
     );
