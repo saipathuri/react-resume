@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import EducationItem from "../educationItem";
-import { ParallaxLayer } from "react-spring";
 
 class Education extends Component {
   state = {
@@ -37,15 +36,10 @@ class Education extends Component {
   };
   render() {
     return (
-      <ParallaxLayer
-        offset={this.props.offset}
-        speed={0.4}
-        onClick={this.props.onClick}
-      >
-        <div className="bg-dark py-3">
-          <div className="container">
-            <div className="row align-items-start fill my-3" id="education">
-              <div className="col-lg">
+        <div className="bg-dark pt-5">
+          <div className="container pt-5">
+            <div className="row align-items-start fill mt-3" id="education">
+              <div className="col-lg pt-3">
                 <h1 className="display-4 text-light">Education</h1>
                 {this.state.items.map(item => {
                   return (
@@ -62,7 +56,6 @@ class Education extends Component {
             </div>
           </div>
         </div>
-      </ParallaxLayer>
     );
   }
 }

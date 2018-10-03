@@ -1,15 +1,9 @@
 import React, { Component } from "react";
-import { ParallaxLayer } from "react-spring";
 
 class About extends Component {
   state = {};
   render() {
     return (
-      <ParallaxLayer
-        offset={this.props.offset}
-        speed={0.4}
-        onClick={this.props.onClick}
-      >
         <div className="bg-dark">
           <div className="container">
             <div className="row align-items-center fill bg-dark" id="about">
@@ -32,7 +26,6 @@ class About extends Component {
             </div>
           </div>
         </div>
-      </ParallaxLayer>
     );
   }
 }

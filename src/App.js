@@ -5,7 +5,6 @@ import Experience from "./components/pages/experience";
 import Education from "./components/pages/education";
 import Waypoint from "react-waypoint/";
 import Pagination from "./components/pagination";
-import { Parallax } from "react-spring";
 
 class App extends Component {
   state = {
@@ -27,34 +26,28 @@ class App extends Component {
   scroll = to => this.refs.parallax.scrollTo(to);
   render() {
     return (
-      <Parallax
-        className="fill bg-dark"
-        ref="parallax"
-        pages={3}
-        horizontal={false}
-        scrolling={true}
-      >
-        {/* <Pagination items={this.state.items} /> */}
+      <React.Fragment>
+        <Pagination items={this.state.items} />
         <Waypoint
           onEnter={() => {
             this.handleEnter("about");
           }}
         />
-        <About offset={0} onClick={() => this.scroll(1)} />
+        <About />
         <Waypoint
           onEnter={() => {
             this.handleEnter("experience");
           }}
         />
-        <Experience offset={1} onClick={() => this.scroll(2)} />
+        <Experience />
         <Waypoint
           onEnter={() => {
             this.handleEnter("education");
           }}
         />
-        <Education offset={2} onClick={() => this.scroll(0)} />
-      </Parallax>
-    );
+        <Education  />
+      </React.Fragment>
+    )
   }
 }
 

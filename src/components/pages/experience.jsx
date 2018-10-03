@@ -1,12 +1,26 @@
 import React, { Component } from "react";
 import ExperienceItem from "../experienceItem";
-import { ParallaxLayer } from "react-spring";
 
 class Experience extends Component {
   state = {
     items: [
       {
-        id: 1,
+        id: 5,
+        title: "Technology Intern",
+        company: "ParkHub",
+        descriptions: [
+          {
+            id: 1,
+            topic: "Reporting Database",
+            description:
+              "Redesigned a reporting database from scratch to improve query speed by 300% using PostgresQL. Implemented several functions in Node.js on AWS Lambda using the Serverless framework to automatically update data. Deployed a new data access mechanism using GraphQL, decreasing query time by 40%."
+          }
+        ],
+        date: "Fall 2018 - Current",
+        location: "Dallas, TX",
+      },
+      {
+        id: 4,
         title: "Technology Analyst Program Intern",
         company: "JPMorgan Chase & Co.",
         descriptions: [
@@ -19,10 +33,9 @@ class Experience extends Component {
         ],
         date: "Summer 2018",
         location: "Plano, TX",
-        active: true
       },
       {
-        id: 2,
+        id: 3,
         title: "Part-Time IT Intern",
         company: "Verizon",
         descriptions: [
@@ -35,10 +48,9 @@ class Experience extends Component {
         ],
         date: "Oct. 2017 - Dec. 2017",
         location: "Irving, TX",
-        active: false
       },
       {
-        id: 3,
+        id: 2,
         title: "Information Technology Intern",
         company: "Verizon",
         descriptions: [
@@ -63,10 +75,9 @@ class Experience extends Component {
         ],
         date: "Summer 2017",
         location: "Basking Ridge, NJ",
-        active: false
       },
       {
-        id: 4,
+        id: 1,
         title: "Technology Intern",
         company: "Speetra",
         descriptions: [
@@ -85,79 +96,17 @@ class Experience extends Component {
         ],
         date: "Aug. 2016 - Dec. 2016",
         location: "Richardson, TX",
-        active: false
       }
     ]
   };
   render() {
     return (
-      <ParallaxLayer
-        offset={this.props.offset}
-        speed={0.4}
-        onClick={this.props.onClick}
-      >
-        <div className="bg-light py-3">
-          <div className="container">
-            <div className="row align-items-start fill my-3" id="experience">
-              <div className="col-lg">
+        <div className="bg-light pt-5">
+          <div className="container pt-5">
+            <div className="row align-items-start fill mt-3" id="experience">
+              <div className="col-lg pt-3">
                 <h1 className="display-4">Experience</h1>
-                <div className="carousel slide" data-ride="carousel">
-                  <ol className="carousel-indicators">
-                    <li
-                      data-target="#carouselExampleIndicators"
-                      data-slide-to="0"
-                      className="active"
-                    />
-                    <li
-                      data-target="#carouselExampleIndicators"
-                      data-slide-to="1"
-                    />
-                    <li
-                      data-target="#carouselExampleIndicators"
-                      data-slide-to="2"
-                    />
-                  </ol>
-                  <div className="carousel-inner">
-                    {this.state.items.map(item => {
-                      return (
-                        <ExperienceItem
-                          key={item.id}
-                          title={item.title}
-                          company={item.company}
-                          descriptions={item.descriptions}
-                          date={item.date}
-                          location={item.location}
-                          active={item.active}
-                        />
-                      );
-                    })}
-                  </div>
-                  <a
-                    className="carousel-control-prev"
-                    href="#carouselExampleIndicators"
-                    role="button"
-                    data-slide="prev"
-                  >
-                    <span
-                      className="carousel-control-prev-icon"
-                      aria-hidden="true"
-                    />
-                    <span className="sr-only">Previous</span>
-                  </a>
-                  <a
-                    className="carousel-control-next"
-                    href="#carouselExampleIndicators"
-                    role="button"
-                    data-slide="next"
-                  >
-                    <span
-                      className="carousel-control-next-icon"
-                      aria-hidden="true"
-                    />
-                    <span className="sr-only">Next</span>
-                  </a>
-                </div>
-                {/* {this.state.items.map(item => {
+                {this.state.items.map(item => {
                   return (
                     <ExperienceItem
                       key={item.id}
@@ -168,12 +117,11 @@ class Experience extends Component {
                       location={item.location}
                     />
                   );
-                })} */}
+                })}
               </div>
             </div>
           </div>
         </div>
-      </ParallaxLayer>
     );
   }
 }
