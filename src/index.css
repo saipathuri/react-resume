@@ -1,5 +1,30 @@
+html,
+#root {
+  height: 100%;
+}
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  height: 100%;
+  position: relative;
+}
+
+.fill {
+  min-height: 100vh;
+  /* height: 100%; */
+}
+
+.pagination {
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.4em;
+  z-index: 10;
+  display: inherit !important;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+  border-radius: 50% !important;
 }
