@@ -12,6 +12,10 @@ cache:
   paths:
   - node_modules
 
+before_script:
+  - apk -Uuv add groff less python py-pip
+  - pip install awscli
+
 #This declares the pipeline stages  
 stages:
   - build
