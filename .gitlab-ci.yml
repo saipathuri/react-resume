@@ -23,6 +23,9 @@ build:
   script:
     - npm install
     - npm run-script build
+  artifacts:
+    paths:
+      - build/
 
 test:
   stage: test
@@ -34,6 +37,4 @@ deploy:
   script:
     - apk -Uuv add groff less python py-pip
     - pip install awscli
-    - ls
-    - pwd
     - npm run-script deploy
