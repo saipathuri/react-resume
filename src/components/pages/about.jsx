@@ -16,7 +16,7 @@ class About extends Component {
                 <blockquote className="blockquote">
                   <p className="mb-0 text-light">
                     Highly motivated student with hands-on experience in several
-                    team projects working on Web Development (Frontend and
+                    team projects working on Web Development (Frontend and
                     Backend), Android/iOS and API development, capable of
                     rapidly integrating new information into his performance,
                     with strong communication skills.
