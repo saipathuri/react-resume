@@ -16,7 +16,7 @@ class Experience extends Component {
               "Redesigned a reporting database from scratch to improve query speed by 300% using PostgresQL. Implemented several functions in Node.js on AWS Lambda using the Serverless framework to automatically update data. Deployed a new data access mechanism using GraphQL, decreasing query time by 40%."
           }
         ],
-        date: "Fall 2018 - Current",
+        date: "Aug. 2018 - June 2019",
         location: "Dallas, TX",
       },
       {
@@ -101,10 +101,10 @@ class Experience extends Component {
   };
   render() {
     return (
-        <div className="bg-light pt-5">
-          <div className="container pt-5">
-            <div className="row align-items-start fill mt-3" id="experience">
-              <div className="col-lg pt-3">
+        <div className="bg-light py-5">
+          <div className="container">
+            <div className="row align-items-start fill" id="experience">
+              <div className="col-lg">
                 <h1 className="display-4">Experience</h1>
                 {this.state.items.map(item => {
                   return (

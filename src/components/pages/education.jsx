@@ -11,14 +11,14 @@ class Education extends Component {
         descriptions: [
           {
             topic: "GPA",
-            description: 3.94
+            description: 3.86
           },
           {
             topic: "Major",
             description: "Computer Engineering"
           }
         ],
-        date: "Aug. 2015 - May 2019 (Expected)"
+        date: "Aug. 2015 - May 2019"
       },
       {
         id: 2,
@@ -36,10 +36,10 @@ class Education extends Component {
   };
   render() {
     return (
-        <div className="bg-dark pt-5">
-          <div className="container pt-5">
-            <div className="row align-items-start fill mt-3" id="education">
-              <div className="col-lg pt-3">
+        <div className="bg-dark py-5">
+          <div className="container">
+            <div className="row align-items-start fill" id="education">
+              <div className="col-lg">
                 <h1 className="display-4 text-light">Education</h1>
                 {this.state.items.map(item => {
                   return (
