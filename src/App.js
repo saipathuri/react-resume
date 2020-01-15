@@ -27,7 +27,6 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Pagination items={this.state.items} />
         <Waypoint
           onEnter={() => {
             this.handleEnter("about");
