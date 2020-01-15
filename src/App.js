@@ -4,7 +4,6 @@ import About from "./components/pages/about";
 import Experience from "./components/pages/experience";
 import Education from "./components/pages/education";
 import Waypoint from "react-waypoint/";
-import Pagination from "./components/pagination";
 
 class App extends Component {
   state = {
