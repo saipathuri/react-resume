@@ -36,7 +36,7 @@ class Education extends Component {
   };
   render() {
     return (
-        <div className="bg-dark py-5">
+        <div className="bg-dark pt-5">
           <div className="container">
             <div className="row align-items-start fill" id="education">
               <div className="col-lg">
