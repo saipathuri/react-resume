@@ -4,7 +4,21 @@ import ExperienceItem from "../experienceItem";
 class Experience extends Component {
   state = {
     items: [
-      {
+        {
+        id: 6,
+            title: "Associate Software Engineer",
+            company: "Capital One",
+            descriptions: [
+                {
+                    id: 1,
+                    topic: "Android - BYOD",
+                    description: "Worked on several features in the flagship Capital One Android application including: feature lead on the Bring Your Own Device (BYOD) feature by coordinating between various teams (backend, product, BA) and implementing the feature to enable users to use their own devices to open accounts in physical bank locations. Enabled customers to open bank accounts with minimal physical contact with associates."
+                }
+            ],
+            date: "Aug. 2019 - Current",
+            location: "New York, New York"
+        },
+        {
         id: 5,
         title: "Technology Intern",
         company: "ParkHub",
