@@ -4,6 +4,7 @@ import About from "./components/pages/about";
 import Experience from "./components/pages/experience";
 import Education from "./components/pages/education";
 import Waypoint from "react-waypoint/";
+import LoginModal from "./components/modals/login";
 
 class App extends Component {
   state = {
@@ -26,6 +27,8 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
+        <button type="button" className="btn btn-primary float-button" data-toggle="modal" data-target="#loginModal">Sign In</button>
+        <LoginModal></LoginModal>
         <Waypoint
           onEnter={() => {
             this.handleEnter("about");

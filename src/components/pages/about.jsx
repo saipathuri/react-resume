@@ -10,8 +10,8 @@ class About extends Component {
               <div className="col-lg">
                 <h1 className="display-1 text-light">Sai Pathuri</h1>
                 <div className="subheading mb-5 text-light">
-                  8314 Pommel Dr. · Austin, TX 78759 · (512) 994-6923 ·&nbsp;
-                  <a href="mailto:iam@saipathuri.me">iam@saipathuri.me</a>
+                  401 E. 34th St., Apt N18F · New York, New York · (512) 994-6923 ·&nbsp;
+                  <a href="mailto:sai@pathuri.net">sai@pathuri.net</a>
                 </div>
                 <blockquote className="blockquote">
                   <p className="mb-0 text-light">

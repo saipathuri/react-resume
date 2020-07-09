@@ -28,3 +28,15 @@ body {
 .pagination > li > span {
   border-radius: 50% !important;
 }
+
+.float-button{
+	position:fixed;
+	top:20px;
+	right:30px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:50px;
+  text-align:center;
+  transition: all 0.2s ease-in 0s;
+	box-shadow: 2px 2px 3px #5e5e5e;
+}
