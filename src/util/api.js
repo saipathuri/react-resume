@@ -3,7 +3,7 @@ import axios from "axios";
 const AUTH_API_URI = process.env.REACT_APP_AUTH_API_URI;
 console.log(AUTH_API_URI);
 const LOGIN_ENDPOINT = "/login";
-const VERIFY_ENDPOINT = "/verify";
+// const VERIFY_ENDPOINT = "/verify";
 
 async function login(username, password) {
     let result;

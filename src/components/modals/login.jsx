@@ -23,7 +23,9 @@ class LoginModal extends Component {
   handleSubmit = async () => {
     this.hideError();
     try {
-      const { accessToken, refreshToken } = await login(this.state.username, this.state.password).data;
+      // TODO: set these in state
+      // const { accessToken, refreshToken } = 
+      await login(this.state.username, this.state.password).data;
     } catch (e) {
       this.showError();
     }
