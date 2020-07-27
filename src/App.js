@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import "./App.css";
-import About from "./components/pages/about";
-import Experience from "./components/pages/experience";
-import Education from "./components/pages/education";
+import About from "./components/pages/About/About";
+import Experience from "./components/pages/Experience/Experience";
+import Education from "./components/pages/Education/Education";
 import Waypoint from "react-waypoint/";
-import LoginModal from "./components/modals/login";
+import VisibleLogin from "./components/modals/VisibleLogin";
 
 class App extends Component {
   state = {
@@ -28,7 +28,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <button type="button" className="btn btn-primary float-button" data-toggle="modal" data-target="#loginModal">Sign In</button>
-        <LoginModal></LoginModal>
+        <VisibleLogin></VisibleLogin>
         <Waypoint
           onEnter={() => {
             this.handleEnter("about");

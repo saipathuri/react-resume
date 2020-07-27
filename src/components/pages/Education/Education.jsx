@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import EducationItem from "../educationItem";
+import EducationItem from "./EducationItem";
 
 class Education extends Component {
   state = {

@@ -5,6 +5,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import App from "./App";
 import registerServiceWorker from "./registerServiceWorker";
+import { Provider } from "react-redux";
+import store from './store/store';
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+    <Provider store={store}>
+        <App />
+    </Provider>, 
+    document.getElementById("root")
+);
 registerServiceWorker();
