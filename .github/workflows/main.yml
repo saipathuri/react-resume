@@ -21,10 +21,6 @@ jobs:
     - name: Yarn Install
       run: |
         yarn install
-    - name: Load Production .env
-      uses: c-py/action-dotenv-to-setenv@v1
-      with:
-        env-file: .env.production
     - name: Production Build
       run: |
         yarn build
