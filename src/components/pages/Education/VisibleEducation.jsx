@@ -7,16 +7,9 @@ const getEducationItems = (educationItems) => {
 
 const mapStateToProps = state => {
   return {
+    signedIn: state.SIGNED_IN,
     items: getEducationItems(state.educationItems)
   }
 }
 
-const mapDispatchToProps = dispatch => {
-  return {
-    onTodoClick: id => {
-      dispatch(toggleTodo(id))
-    }
-  }
-}
-
-export default VisibleEducation = connect(mapStateToProps, mapDispatchToProps)(Education)
+export default connect(mapStateToProps)(Education)

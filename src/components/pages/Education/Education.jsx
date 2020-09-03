@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import EducationItem from "./EducationItem";
+import EditButton from "../../shared/EditButton";
 
 class Education extends Component {
   state = {
@@ -11,14 +12,14 @@ class Education extends Component {
         descriptions: [
           {
             topic: "GPA",
-            description: 3.86
+            description: 3.86,
           },
           {
             topic: "Major",
-            description: "Computer Engineering"
-          }
+            description: "Computer Engineering",
+          },
         ],
-        date: "Aug. 2015 - May 2019"
+        date: "Aug. 2015 - May 2019",
       },
       {
         id: 2,
@@ -27,35 +28,40 @@ class Education extends Component {
         descriptions: [
           {
             topic: "GPA",
-            description: 4.95
-          }
+            description: 4.95,
+          },
         ],
-        date: "Oct. 2017 - Dec. 2017"
-      }
-    ]
+        date: "Oct. 2017 - Dec. 2017",
+      },
+    ],
   };
   render() {
     return (
-        <div className="bg-dark pt-5">
-          <div className="container">
-            <div className="row align-items-start fill" id="education">
-              <div className="col-lg">
-                <h1 className="display-4 text-light">Education</h1>
-                {this.state.items.map(item => {
-                  return (
-                    <EducationItem
-                      key={item.id}
-                      schoolName={item.schoolName}
-                      degree={item.degree}
-                      descriptions={item.descriptions}
-                      date={item.date}
-                    />
-                  );
-                })}
+      <div className="bg-dark pt-5">
+        <div className="container">
+          <div className="row align-items-start fill" id="education">
+            <div className="col-lg">
+              <div className="row">
+                <div className="col-lg">
+                  <h1 className="display-4 text-light">Education</h1>
+                </div>
+                {this.props.signedIn && <EditButton />}
               </div>
+              {this.state.items.map((item) => {
+                return (
+                  <EducationItem
+                    key={item.id}
+                    schoolName={item.schoolName}
+                    degree={item.degree}
+                    descriptions={item.descriptions}
+                    date={item.date}
+                  />
+                );
+              })}
             </div>
           </div>
         </div>
+      </div>
     );
   }
 }
