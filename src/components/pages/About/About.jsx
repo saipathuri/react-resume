@@ -16,17 +16,13 @@ class About extends Component {
                 {this.props.signedIn && <EditButton />}
               </div>
               <div className="subheading mb-5 text-light">
-                401 E. 34th St., Apt N18F · New York, New York · (512) 994-6923
+                1221 S. Congress Ave., Apt 1225 · Austin, Texas · (512) 994-6923
                 ·&nbsp;
                 <a href="mailto:sai@pathuri.net">sai@pathuri.net</a>
               </div>
               <blockquote className="blockquote">
                 <p className="mb-0 text-light">
-                  Highly motivated student with hands-on experience in several
-                  team projects working on Web Development (Frontend and
-                  Backend), Android/iOS and API development, capable of rapidly
-                  integrating new information into his performance, with strong
-                  communication skills.
+                Self-Starter Engineer with Strong Teamwork + Communication Skills | Experienced in Frontend, Backend and Mobile Development | JS/Python/Java
                 </p>
               </blockquote>
             </div>

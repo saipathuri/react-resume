@@ -6,18 +6,85 @@ class Experience extends Component {
   state = {
     items: [
       {
+        id: 7,
+        title: "Software Engineer",
+        company: "Orchard",
+        descriptions: [
+          {
+            id: 1,
+            topic: "Market Launch Lead",
+            description:
+            `
+            Served as the technical lead of a project to expand the company into 3 new markets in 2022.
+            Coordinated efforts between stakeholders, product managers, and engineering leads to coordinate and release support.
+            Created a project plan to estimate the engineering capacity necessary to complete the project on time, and planned for
+            contingencies in case external dependencies were not ready in time. This increased our exposure to markets by 30%.
+            `,
+          },
+          {
+            id: 2,
+            topic: "Auth Guild Core Member",
+            description:
+              `
+              Served as one of three core members on the Auth Guild to revamp the companies
+              authorization and authentication strategy. Responsible for gathering requirements for the Platform, prioritizing them,
+              vetting vendors, and created a proposal to be approved by the leadership team.
+              `,
+          },
+          {
+            id: 3,
+            topic: "Partner Integrations",
+            description:
+              `
+              Created two integrations with a leading real estate institution and a mortgage company to acquire
+              leads automatically. The first integration is a Python application that conforms to the API specification of the partner, only
+              accepts requests from their services and was architected to minimize the risk of overloading internal systems. The second
+              integration is an Angular web app used by employees of the partner company to submit customer information that is
+              processed by a Python application into a lead.
+              `,
+          },
+        ],
+        date: "Aug. 2021 - Current",
+        location: "Austin, TX",
+      },
+      {
         id: 6,
         title: "Associate Software Engineer",
         company: "Capital One",
         descriptions: [
           {
             id: 1,
-            topic: "Android - BYOD",
+            topic: "Android - Feature Lead",
             description:
-              "Worked on several features in the flagship Capital One Android application including: feature lead on the Bring Your Own Device (BYOD) feature by coordinating between various teams (backend, product, BA) and implementing the feature to enable users to use their own devices to open accounts in physical bank locations. Enabled customers to open bank accounts with minimal physical contact with associates.",
+              `
+              Worked on several features in the flagship Capital One Android application including: feature
+              lead on Bring Your Own Device (BYOD); enabled users to open accounts in physical bank locations on their own devices
+              with minimal physical contact with associates. Coordinated between various teams (backend, iOS, product, analysts) and
+              pushed the feature to production.
+              `,
+          },
+          {
+            id: 2,
+            topic: "Backend - Modernization",
+            description:
+              `
+              On-boarded microservice to latest Enterprise pipeline tooling, upgraded the infrastructure to
+              an ALB fronted Lambda function, updated the test runner to invoke the service securely, migrated secrets to a secured vault
+              and updated access mechanism, request source validation via PoP tokens leading to an increase in pipeline stability.
+              Researched root causes of errors and designed/implemented solutions that lead to a 3% decrease in error rate.
+              `,
+          },
+          {
+            id: 3,
+            topic: "Android - Platform Improvements",
+            description:
+              `Rewrote a core module used to identify feature flags using Kotlin features to
+              improve readability, understand default behavior and increase testability. Enabled the use of deep links to allow customers to
+              quickly navigate the application. Created a feature that allowed developers to quickly pre-fill information on forms to
+              increase productivity`,
           },
         ],
-        date: "Aug. 2019 - Current",
+        date: "Aug. 2019 - Aug. 2021",
         location: "New York, New York",
       },
       {

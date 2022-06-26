@@ -27,8 +27,8 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Button variant="primary" data-toggle="modal" data-target="#loginModal" className="float-button">Sign In</Button>
-        <VisibleLogin />
+        {/* <Button variant="primary" data-toggle="modal" data-target="#loginModal" className="float-button">Sign In</Button> */}
+        {/* <VisibleLogin /> */}
         <VisibleAbout />
         <VisibleExperience />
         <VisibleEducation />
