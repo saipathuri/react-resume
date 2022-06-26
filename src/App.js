@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import VisibleLogin from "./components/modals/VisibleLogin";
 import VisibleAbout from "./components/pages/About/VisibleAbout";
-import { Button } from 'react-bootstrap';
 import VisibleEducation from "./components/pages/Education/VisibleEducation";
 import VisibleExperience from "./components/pages/Experience/VisibleExperience";
 
